@@ -19,35 +19,50 @@
         </p>
       </div>
       <div class="panel-welcome hide" id="section-2">
+        <input class="logout" type="button" id="signout-button" value="Logout"/>
         <div class="avatar-section">
           <img src="https://s3.amazonaws.com/onename/avatar-placeholder.png" class="img-rounded avatar" id="avatar-image">
         </div>
-        <h1>Hello, <span id="heading-name">Anonymous</span>!</h1>
-        <p class="lead">
-          <a href="#" class="btn btn-primary btn-lg" id="signout-button">
-            Logout
-          </a>
-        </p>
+        <h1>Supplier: <span id="heading-name">Anonymous</span></h1>
+
         <div class="container">
-          <form action="action_page.php">
+            <h2 class="style_header_1">INVENTARIO</h2>
 
-            <label for="fname">Product</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <form>
+              <h3>Características de la Pieza</h3>
+              <label>ID Aeronave:</label>
+              <input type="text" name="idaeronave" placeholder="EC-MOO"><br />
+              <label>ID Pieza:</label>
+              <input type="text" name="idpieza" placeholder="B546SE324"><br />
+              <label>Pieza:</label>
+              <input type="text" name="pieza" placeholder="Front Wheel"><br /><br />
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
+              <hr>
 
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <h3>Información de la Pieza</h3>
+              <label>Fecha de Fabricación:</label>
+              <input type="text" name="fechafabr" placeholder="DD/MM/AAAA"><br />
+              <label>IFecha de Compra:</label>
+              <input type="text" name="fechacompra" placeholder="DD/MM/AAAA"><br />
+              <label>Ultimo Propietario:</label>
+              <input type="text" name="pieza" placeholder="VY45T89"><br /><br />
 
-            <input type="submit" value="Search">
+              <hr>
 
-          </form>
+              <label>Añadir a:</label>
+              <input type="checkbox" name="chk_group1" value="value_venta" />Inventario Venta<br />
+              <input type="checkbox" name="chk_group1" value="value_compania" />Inventario Compañía<br /><br />
+
+              <hr>
+
+              <input type="submit" name="inicio" value="INICIO">
+              <input type="submit" name="anadir" value="AÑADIR">
+
+            </form>
+
         </div>
+
+
       </div>
     </div>
   </div>
